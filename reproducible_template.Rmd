@@ -1,0 +1,38 @@
+---
+title: ""
+author: ""
+date: ""
+output: pdf_document
+---
+##
+
+##
+:  
+*  
+* 
+** 
+*   
+
+##
+```{r packages, echo=FALSE, message=FALSE,warning=FALSE}
+#Tarvittavat paketit
+library("")
+```
+
+```{r Versions, echo=FALSE, message=FALSE}
+info <- sessionInfo()
+r_ver <- paste(info$R.version$major, info$R.version$minor, sep=".")
+```
+
+###Datan käsittely ja analyysi:
+Kaikki dokumentin aineisto on käsitelty ja analysoitu R (ver. `r r_ver`).
+
+__Muut käytetyt R moduulit ja niiden versiot:__    
+* `r info$otherPkgs$data.table$Package` ver. `r info$otherPkgs$data.table$Version`  
+* `r info$otherPkgs$lubridate$Package` ver. `r info$otherPkgs$lubridate$Version`  
+* `r info$otherPkgs$lattice$Package` ver. `r info$otherPkgs$lattice$Version`  
+* `r info$otherPkgs$stringr$Package` ver. `r info$otherPkgs$stringr$Version`  
+* `r info$otherPkgs$ggplot2$Package` ver. `r info$otherPkgs$ggplot2$Version`
+* `r info$otherPkgs$XML$Package` ver. `r info$otherPkgs$XML$Version`
+
+Itse dokumentti on koostettu knitr moduulilla (ver `r info$otherPkgs$knitr$Version`) [Xie, 2013] analyysin toistettavuuden vuoksi.
